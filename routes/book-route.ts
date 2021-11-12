@@ -40,7 +40,7 @@ export class BookRoute {
         Book.findByIdAndUpdate(
           req.params['id'],
           req.body,
-          (err: any, book: any) => {
+          (err: string, book: any) => {
             if (err) {
               return next(err);
             }
